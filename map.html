@@ -72,7 +72,7 @@
   (function () {
     var C = window.BIGYO_CONFIG || {};
     if (C.naverMapClientId && C.mapEngine !== 'leaflet') {
-      document.write('<script src="https://openapi.map.naver.com/openapi/v3/maps.js?' + (C.naverMapKeyParam || 'ncpKeyId') + '=' + encodeURIComponent(C.naverMapClientId) + '"><\/script>');
+      document.write('<script src="https://oapi.map.naver.com/openapi/v3/maps.js?' + (C.naverMapKeyParam || 'ncpKeyId') + '=' + encodeURIComponent(C.naverMapClientId) + '"><\/script>');
     }
   })();
 </script>

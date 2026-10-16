@@ -27,7 +27,7 @@ window.BIGYO_CONFIG = {
 
   // 카카오 지도 JavaScript 키: 사진이 없는 단지 카드에 단지 위치 지도를 보여 줘요 (비워 두면 기본 그림).
   // Kakao Developers → 내 애플리케이션 → 플랫폼 → Web 사이트 도메인에 https://apartmentcompare.org 를 등록해 주세요.
-  kakaoMapKey: "ab880fbc2950d6cbd1b73e0602a38c36",
+  kakaoMapKey: "",
 
   // Where 안심거래센터 consultation requests and privacy questions are sent.
   contactEmail: "",
