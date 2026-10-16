@@ -14,7 +14,7 @@ window.BIGYO_CONFIG = {
   //   https://apartmentcompare.org
   //   https://www.apartmentcompare.org   (www 주소도 쓸 경우)
   //   http://localhost:8080              (내 컴퓨터에서 테스트할 때)
-  naverMapClientId: "pqlijzerxw",
+  naverMapClientId: "d6w7jivt1i",
   // Newer NAVER Maps keys use "ncpKeyId". Older keys used "ncpClientId".
   naverMapKeyParam: "ncpKeyId",
 
