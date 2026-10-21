@@ -153,7 +153,7 @@
     if (!a.image) return '<div class="photo ' + (cls || '') + '">' + ph + '</div>';
     var cr = a.imageCredit ? '<a class="photo-credit" href="' + esc(a.imageCredit.source || '#') + '" target="_blank" rel="noopener noreferrer">사진: ' + esc(a.imageCredit.label || '') + '</a>' : '';
     return '<div class="photo ' + (cls || '') + '">' + ph +
-      '<img src="' + esc(a.image) + '" alt="' + esc(a.name) + ' 전경" loading="lazy" decoding="async" onerror="this.remove()" style="position:relative">' + cr +
+      '<img src="' + esc(a.image) + '" alt="' + esc(a.name) + ' 전경" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" style="position:relative">' + cr +
       '</div>';
   };
 
@@ -212,7 +212,7 @@
     var rankHTML = rank ? '<span class="rank" aria-label="' + rank + '위">' + rank + '</span>' : '';
     return '<article class="card apt' + (cls ? ' ' + cls : '') + '">' +
       '<div class="ph ph--top' + (!a.image && MAP_ON && a.lat ? ' ph--map' + (mapHTML[a.id] ? ' is-ready' : '') : '') + '">' + BP.skyline(a) +
-        (a.image ? '<img class="ph-img ph-photo" src="' + esc(a.image) + '" alt="' + esc(a.name) + ' 전경" loading="lazy" onerror="this.remove()">' : '') +
+        (a.image ? '<img class="ph-img ph-photo" src="' + esc(a.image) + '" alt="' + esc(a.name) + ' 전경" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">' : '') +
         (a.image && a.imageCredit ? '<span class="ph-credit">' + esc(creditText(a)) + '</span>' : '') +
         (!a.image && MAP_ON && a.lat ? '<div class="ph-map" data-map="' + esc(a.id) + '">' + (mapHTML[a.id] || '') + '</div>' : '') +
         '<a class="ph-link" href="' + BP.aptUrl(a) + '" aria-label="' + esc(a.name) + ' 상세 정보"></a>' +
